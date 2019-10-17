@@ -1,0 +1,20 @@
+    <form action="/login" method="POST">
+      <div class="form-group row d-flex justify-content-center">
+        <label for="username">Usuario</label>
+        <div class="col-3">
+          <input type="text" class="form-control" name="username">
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <label for="password">Senha</label>
+        <div class="col-3">
+          <input type="password" class="form-control" name="password">
+        </div>
+      </div>
+      <div>
+        <input type="submit" class="mt-4 btn btn-primary" value="Log In">
+      </div>
+    </form>
+    {{#if message}}
+    <div class="error-message">{{ message }}</div>
+    {{/if}}
