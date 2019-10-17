@@ -52,5 +52,7 @@ app.locals.title = "Grupo 2 - HACKATHON - IRONHACK - OUT - 2019";
 
 const index = require("./routes/index");
 app.use("/", index);
+const clients = require("./routes/client");
+app.use("/client", clients);
 
 module.exports = app;
