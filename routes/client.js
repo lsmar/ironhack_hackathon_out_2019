@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const ClientModel = require("../models/clients");
+const ClientModel = require("../models/client");
 //* Post to create new client
 router.post("/new", (req, res, next) => {
   const { name, email, categories } = req.body;

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const express = require("express");
@@ -9,6 +10,7 @@ const path = require("path");
 const Admin = require("./models/admin");
 const flash = require("connect-flash");
 const session = require("express-session");
+const MongoStore = require("connect-mongo")(session);
 const bcrypt = require("bcrypt");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
@@ -46,13 +48,14 @@ app.use(
   })
 );
 
-app.use(
-  session({
-    secret: "xy1zz",
-    resave: true,
-    saveUninitialized: true
+app.use(session({
+  secret: "basic-auth-secret",
+  cookie: { maxAge: 60000 },
+  store: new MongoStore({
+    mongooseConnection: mongoose.connection,
+    ttl: 24 * 60 * 60 // 1 day
   })
-);
+}));
 
 passport.serializeUser((user, cb) => {
   cb(null, user._id);
