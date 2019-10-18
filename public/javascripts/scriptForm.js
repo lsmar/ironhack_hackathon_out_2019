@@ -1,7 +1,7 @@
 $(document).ready(function() {
   const theName = document.getElementById("InputName1");
   const theCategories = document.getElementsByClassName("the-categories");
-  const theEmail = document.getElementsByClassName("the-email");
+  const theEmail = document.getElementById("InputEmail");
   const theAdults = document.getElementById("InputNumberAdults");
   const theChildrens = document.getElementById("InputNumberChildrens");
   InputNumberAdults;
@@ -34,7 +34,7 @@ $(document).ready(function() {
           $("#successMsg").show();
           console.log("post successful and the response is: ", response.data);
           theName.value = "";
-          theEmail[0].value = "";
+          theEmail.value = "";
           theChildrens.value = "";
           theAdults.value = "";
           [...theCategories].forEach(el => {
