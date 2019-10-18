@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const express = require("express");
@@ -48,14 +48,16 @@ app.use(
   })
 );
 
-app.use(session({
-  secret: "basic-auth-secret",
-  cookie: { maxAge: 60000 },
-  store: new MongoStore({
-    mongooseConnection: mongoose.connection,
-    ttl: 24 * 60 * 60 // 1 day
+app.use(
+  session({
+    secret: "basic-auth-secret",
+    cookie: { maxAge: 60000 },
+    store: new MongoStore({
+      mongooseConnection: mongoose.connection,
+      ttl: 24 * 60 * 60 // 1 day
+    })
   })
-}));
+);
 
 passport.serializeUser((user, cb) => {
   cb(null, user._id);
@@ -115,6 +117,9 @@ const index = require("./routes/index");
 app.use("/", index);
 const clients = require("./routes/client");
 app.use("/client", clients);
+app.get("/maps", (req, res, next) => {
+  res.render("maps");
+});
 const passportRouter = require("./routes/passportRouter");
 app.use("/", passportRouter);
 
