@@ -1,68 +1,178 @@
+{{!-- red --}}
+<div class="container lsm-container">
+  <div class="row image-red">
+    <div class="col-sm-12 text-center mt-3"><h3>PARA OS PEQUENOS</h3>
+      <h1>Opções Kids</h1></div>
+    <div class="col-md-4 col-sm-12 text-center p-2"><img class="img-fluid p-2" src="/images/kidsgif1.gif" alt=""><h1 class="text-center text-white">Sabores
+        simples e gostosos</h1></div>
+    <div class="col-md-4 col-sm-12 text-center p-2"><img class="img-fluid p-2" src="/images/gif2.gif" alt=""><h1 class="text-center text-white">Colorido
+        na medida certa</h1></div>
+    <div class="col-md-4 col-sm-12 text-center p-2"><img class="img-fluid p-2" src="/images/kidsgif3.gif" alt=""><h1 class="text-center text-white">Diversidade
+        de acompanhamentos</h1></div>
+    <div class="col-sm-12 text-center mb-5 p-5"><p class="text-center text-white">“Pensamos em marmitas kids com tamanhos adaptados e valor
+        nutricional
+        adequado para cada fase da infância, ao mesmo tempo que consegue estimular a alimentação saudável.”
+      </p>
+    </div>
+  </div>
+</div>
+<style>
+  .image-red{
+  min-height: 600px;
+  width: 100vw;
+  min-width: 100%;
+  background-image: url("/images/section.kids.png");
+  background-repeat: no-repeat;
+  background-size: cover;}
+  .lsm-container{
+    margin: 0;;
+  }
+  </style>
+{{!-- green --}}
 
-<section class = "pages row">
+<div class="container lsm-container">
+  <div class="row image-green">
+    <div class="col-sm-12 text-center mt-3"><h3>KITS</h3>
+      <h1>Combos</h1></div>
+    <div class="col-md-4 col-sm-12 text-center p-2">
+      <div class="container-lsm m-5">
+        <img class="img-fluid p-2 image-lsm" src="/images/combo1.png" alt="">
+        <div class="middle-lsm">
+          <div class="text-lsm"><h1>MEU COMBO</h1><h2>Marmitas individuais para 5 dias.</h2></div>
+        </div>
+      </div>
+      <br><button class="btn mt-3 btn-primary
+        form-button pl-5 pr-5 mb-5">Comprar</button></div>
+    <div class="col-md-4 col-sm-12 text-center p-2">
+      <div class="container-lsm m-5">
+        <img class="img-fluid p-2 image-lsm" src="/images/combo2.png" alt="">
+        <div class="middle-lsm">
+          <div class="text-lsm"><h1>NOSSO COMBO</h1><h2>Marmitas para até 4 pessoas</h2></div>
+        </div>
+      </div>
+      <br><button class="btn mt-3 btn-primary
+        form-button pl-5 pr-5 mb-5">Comprar</button></div>
+    <div class="col-md-4 col-sm-12 text-center p-2">
+      <div class="container-lsm m-5">
+        <img class="img-fluid p-2 image-lsm" src="/images/combo3.png" alt="">
+        <div class="middle-lsm">
+          <div class="text-lsm"><h1>COMBO DELES</h1><h2>Marmitas para 5 dias no tamanho kids</h2></div>
+        </div>
+      </div>
+      <br><button class="btn mt-3 btn-primary
+        form-button pl-5 pr-5 mb-5">Comprar</button></div>
+  </div>
+</div>
+<style>
+  .image-lsm {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-lsm {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-lsm:hover .image-lsm {
+  opacity: 0.3;
+}
+
+.container-lsm:hover .middle-lsm {
+  opacity: 1;
+}
+
+.text-lsm {
+
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+  .image-green{
+  min-height: 600px;
+  width: 100vw;
+  min-width: 100%;
+  background-image: url("/images/section.kits.png");
+  background-repeat: no-repeat;
+  background-size: cover;}
+  .lsm-container{
+    margin: 0;;
+  }
+  </style>
+<section class="pages row">
   <div class="main-pages col-md-5 col-sm-8 col-xm-10">
-<img class="logo" src="/images/logo.png" alt="" srcset="">
-<h2 class ="header-main-section1">refeições saudáveis para toda a família</h2>
-<h2 class ="header-small-section1">que tal se cadastrar e receber um desconto na sua primeira compra?</h2>
- 
-<div class="container">
-  <form id="new-client-form">
-    <div class="alert alert-success" role="alert" id="successMsg" style="display: none;">
-      Parabéns!!! O seu cadastro foi realizado com sucesso.
-    </div>
-    <div class="alert alert-warning" role="alert" id="duplicatedMsg" style="display: none;">
-      Fique tranquilo, você já está cadastrado!!!
-    </div>
-    <div class="alert alert-danger" role="alert" id="errorMsg" style="display: none;">
-      Opss algo de errado aconteceu! Tente novamente mais tarde! Ou entre em contato conosco.
-    </div>
-    <div class="form-group">
-      
-      <input type="text" class="form-control imputs" id="InputName1" name="name" placeholder="Nome" required>
-    </div>
-    <div class="form-group">
- 
-      <input type="email" class="form-control imputs" id="InputEmail" name="email" aria-describedby="emailHelp" placeholder="Email"
-        required>
-     
-    </div>
-     <div class="form-group">
- 
-      <input type="number" class="form-control imputs" id="InputNumberAdults" name="adults" placeholder="Adultos" required>
-    </div>
-     <div class="form-group">
-     
-      <input type="number" class="form-control imputs" id="InputNumberChildrens" name="childrens" placeholder="Crianças" required>
-    </div>
-    <div class="form-group preferences">
-      <label for="categories">Preferencias </label>
-      <br>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="carnivoro">
-        <label class="form-check-label" for="inlineCheckbox1">Vegetariano</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="vegetariano">
-        <label class="form-check-label" for="inlineCheckbox2">Vegano</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="vegano">
-        <label class="form-check-label" for="inlineCheckbox3">Low-Carb</label>
-      </div>
+    <img class="logo" src="/images/logo.png" alt="" srcset="">
+    <h2 class="header-main-section1">refeições saudáveis para toda a família</h2>
+    <h2 class="header-small-section1">que tal se cadastrar e receber um desconto na sua primeira compra?</h2>
 
-    </div>
-    <button id="btn-submit" type="submit" class="form-button btn btn-primary btn-lg btn-block">Receber 20%</button>
+    <div class="container">
+      <form id="new-client-form">
+        <div class="alert alert-success" role="alert" id="successMsg" style="display: none;">
+          Parabéns!!! O seu cadastro foi realizado com sucesso.
+        </div>
+        <div class="alert alert-warning" role="alert" id="duplicatedMsg" style="display: none;">
+          Fique tranquilo, você já está cadastrado!!!
+        </div>
+        <div class="alert alert-danger" role="alert" id="errorMsg" style="display: none;">
+          Opss algo de errado aconteceu! Tente novamente mais tarde! Ou entre em contato conosco.
+        </div>
+        <div class="form-group">
 
-  </form>
-</div>
-</div>
+          <input type="text" class="form-control imputs" id="InputName1" name="name" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+
+          <input type="email" class="form-control imputs" id="InputEmail" name="email" aria-describedby="emailHelp" placeholder="Email"
+            required>
+
+        </div>
+        <div class="form-group">
+
+          <input type="number" class="form-control imputs" id="InputNumberAdults" name="adults" placeholder="Adultos" required>
+        </div>
+        <div class="form-group">
+
+          <input type="number" class="form-control imputs" id="InputNumberChildrens" name="childrens" placeholder="Crianças" required>
+        </div>
+        <div class="form-group preferences">
+          <label for="categories">Preferencias </label>
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="carnivoro">
+            <label class="form-check-label" for="inlineCheckbox1">Vegetariano</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="vegetariano">
+            <label class="form-check-label" for="inlineCheckbox2">Vegano</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="vegano">
+            <label class="form-check-label" for="inlineCheckbox3">Low-Carb</label>
+          </div>
+
+        </div>
+        <button id="btn-submit" type="submit" class="form-button btn btn-primary btn-lg btn-block">Receber 20%</button>
+
+      </form>
+    </div>
+  </div>
 
 </section>
- <section class="features12 cid-rFdjdzTEVO" id="features12-0">
+<section class="features12 cid-rFdjdzTEVO" id="features12-0">
 
   <div class="container">
     <h3 class="text-center-header-small mb-1">BENEFÍCIOS</h3>
-      <h1 class="text-center-header-big mb-3">Por que a Nhack?</h1>
+    <h1 class="text-center-header-big mb-3">Por que a Nhack?</h1>
 
     <div class="media-container-row pt-5">
       <div class="block-content align-right">
@@ -145,106 +255,106 @@
     </div>
   </div>
 </section>
-<section class="carrosel"> 
-<div class="container-fluid">
-  <h3 class="text-center-header-small mb-1">DESTAQUE</h3>
-  <h1 class="text-center-header-big mb-3">conheça os pratos mais vendidos</h1>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner row w-100 mx-auto">
-      <div class="carousel-item col-md-4 active">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="/images/peixe.png" alt="Card image cap">
-         
-           
-            
-            <p class="card-text"><small class="text-muted">vegan</small></p>
-               <p class="text-black"><small class="text-muted">omelete</small></p>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="/images/carne.png" alt="Card image cap">
-       
-            
-           
-            <p class="card-text"><small class="text-muted">vegan</small></p>
-              <p class="text-black"><small class="text-muted">omelete</small></p>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="/images/peixe.png" alt="Card image cap">
-         
-            
-           
-            <p class="card-text"><small class="text-muted">vegan</small></p>
-              <p class="text-black"><small class="text-muted">omelete</small></p>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
-         
-          
-            
+<section class="carrosel">
+  <div class="container-fluid">
+    <h3 class="text-center-header-small mb-1">DESTAQUE</h3>
+    <h1 class="text-center-header-big mb-3">conheça os pratos mais vendidos</h1>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner row w-100 mx-auto">
+        <div class="carousel-item col-md-4 active">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="/images/peixe.png" alt="Card image cap">
+
+
+
             <p class="card-text"><small class="text-muted">vegan</small></p>
             <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
-        
-           
-            
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="/images/carne.png" alt="Card image cap">
+
+
+
             <p class="card-text"><small class="text-muted">vegan</small></p>
-              <p class="text-black"><small class="text-muted">omelete</small></p>
+            <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
-         
-            
-            
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="/images/peixe.png" alt="Card image cap">
+
+
+
             <p class="card-text"><small class="text-muted">vegan</small></p>
-               <p class="text-black"><small class="text-muted">omelete</small></p>
+            <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
-         
-            
-            
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
+
+
+
             <p class="card-text"><small class="text-muted">vegan</small></p>
-               <p class="text-black"><small class="text-muted">omelete</small></p>
+            <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
+
+
+
+            <p class="card-text"><small class="text-muted">vegan</small></p>
+            <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
+
+
+
+            <p class="card-text"><small class="text-muted">vegan</small></p>
+            <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
+
+
+
+            <p class="card-text"><small class="text-muted">vegan</small></p>
+            <p class="text-black"><small class="text-muted">omelete</small></p>
+          </div>
         </div>
       </div>
-   </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
-</div>
 </section>
 <section class="kidsOption">
-    <h3 class="text-center-header-small mb-1">NOVIDADE</h3>
+  <h3 class="text-center-header-small mb-1">NOVIDADE</h3>
   <h1 class="text-center-header-big mb-3">Opções Kids</h1>
-  <div class = "kids-main row">
-<div class="col-lg-6">
-<h1 class="kids-text">Valor nutricional adequado </h1>
-<h1 class="kids-text">Sabor da comida da vovó </h1>
-<h1 class="kids-text">Tamanhos adequados </h1>
-</div>
-<div class="kids-image col-lg-6">
-<img src="/images/plateIlustration.svg" alt="" srcset="">
-</div>
+  <div class="kids-main row">
+    <div class="col-lg-6">
+      <h1 class="kids-text">Valor nutricional adequado </h1>
+      <h1 class="kids-text">Sabor da comida da vovó </h1>
+      <h1 class="kids-text">Tamanhos adequados </h1>
+    </div>
+    <div class="kids-image col-lg-6">
+      <img src="/images/plateIlustration.svg" alt="" srcset="">
+    </div>
   </div>
 
 
@@ -453,5 +563,5 @@ const contentString = '<div id="content">'+
 }
 };
   </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
- <script src="/javascripts/scriptDesign.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/javascripts/scriptDesign.js"></script>
