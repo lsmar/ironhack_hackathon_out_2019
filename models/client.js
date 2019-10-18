@@ -12,7 +12,15 @@ const clientSchema = new Schema(
       required: true,
       unique: true
     },
-    categories: [String]
+    categories: [String],
+    childrens: {
+      type: Number,
+      required: true
+    },
+    adults: {
+      type: Number,
+      required: true
+    }
   },
   { timestamps: true }
 );
