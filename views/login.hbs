@@ -1,20 +1,31 @@
-    <form action="/login" method="POST">
-      <div class="form-group row d-flex justify-content-center">
-        <label for="username">Usuario</label>
-        <div class="col-3">
+ <div class="login-form d-flex align-center justify-content-center">
+  <form action="/login" method="POST">
+    <div class="row">
+      <div class="form-group col-lg-4 col-md-6 col-sm-8 col-xs-12">
+        <label for="username">Usuário</label>
+        <div class="">
           <input type="text" class="form-control" name="username">
         </div>
       </div>
-      <div class="row d-flex justify-content-center">
+      <div class="form-group col-lg-4 col-md-6 col-sm-8 col-xs-12">
         <label for="password">Senha</label>
-        <div class="col-3">
+        <div class="">
           <input type="password" class="form-control" name="password">
         </div>
       </div>
-      <div>
-        <input type="submit" class="mt-4 btn btn-primary" value="Log In">
+      <div class="form-group col-lg-4 col-md-6 col-sm-8 col-xs-12">
+        <div class="">
+
+          <input type="submit" class="mt-4 btn btn-primary" value="Log In">
+        </div>
       </div>
-    </form>
-    {{#if message}}
-    <div class="error-message">{{ message }}</div>
-    {{/if}}
+    </div>
+  </form>
+  {{#if message}}
+  <div class="error-message">{{ message }}</div>
+  {{/if}}
+</div>
+<style>.login-form{
+  
+  height: 100vh;
+  color:black}</style>
