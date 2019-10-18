@@ -1,10 +1,69 @@
-<h3>filtre clientes por </h3>
+<h1 class="text-primary text-center">Resumo Sobre os Seus Clientes</h1>
+<table class="table bg-white">
+  <thead>
+    <tr>
+      <th scope="col">Total de Clientes</th>
+      <th scope="col">Qtd Vegetariano</th>
+      <th scope="col">Qtd Vegano</th>
+      <th scope="col">Qtd Low-Carb</th>
+      <th scope="col">Qtd média de Adultos</th>
+      <th scope="col">Qtd média de Crianças</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>{{stats.total}}</td>
+      <td>{{stats.prefs.vegetarian}}</td>
+      <td>{{stats.prefs.vegan}}</td>
+      <td>{{stats.prefs.low}}</td>
+      <td>{{stats.adults}}</td>
+      <td>{{stats.childrens}}</td>
+
+    </tr>
+
+
+  </tbody>
+</table>
+<h1 class="text-primary text-center">Sua Lista de Clientes</h1>
+<table class="table bg-white">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Adultos</th>
+      <th scope="col">Crianças</th>
+      <th scope="col">Preferências</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each clients}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{adults}}</td>
+      <td>{{childrens}}</td>
+      <td>
+        {{#if prefs.vegetarian}}<span class="badge badge-success">Vegetariano</span>{{/if}}
+        {{#if prefs.vegan}}<span class="badge badge-info">Vegano</span>{{/if}}
+        {{#if prefs.low}}<span class="badge badge-warning">Low-Carb</span>{{/if}}
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+
+<style>table{color:black; }</style>
+
+{{!-- <h3>filtre clientes por </h3>
 <select name="filtre" id="filter">
   <option value="Carnivoro">Carnivoro</option>
   <option value="Vegetariano">Vegetariano</option>
   <option value="Vegano">Vegano</option>
   <option value="Sem glutem">Sem glutem</option>
 </select>
-<button id= "theButton">filtrar</button>
+<button id="theButton">filtrar</button>
 <canvas id="myChart" width="400" height="400"></canvas>
-<script src="/javascripts/script.js"></script>
+<script src="/javascripts/script.js"></script> --}}
