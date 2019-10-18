@@ -8,6 +8,62 @@ body {
 a {
   color: #00B7FF;
 }
+
+.pages{
+  background-image: url(/images/background.png);
+  width: 100vw;
+  height: 65vh;
+  background-repeat: no-repeat;
+}
+.header-main-section1{
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: 0.26em;
+  
+  /* geika/darkgray */
+  
+ color: #444249;
+
+}
+
+.header-small-section1{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  
+  /* geika/darkgray */
+  
+  color: #444249;
+}
+.imputs{
+  border-radius: 20px;
+
+}
+.preferences{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+
+/* Gray 3 */
+
+color: #828282;
+}
+
+.form-button{
+  background: #444249;
+border-radius: 20px;
+}
+
+
+
 @media (min-width: 768px) {
   /* show 3 items */
   .carousel-inner .active,
