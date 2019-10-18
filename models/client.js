@@ -9,7 +9,8 @@ const clientSchema = new Schema(
     },
     email: {
       type: String,
-      required: true
+      required: true,
+      unique: true
     },
     categories: [String]
   },
