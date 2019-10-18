@@ -16,7 +16,7 @@ $(document).ready(function() {
     const clientInfo = {
       name: theName.value,
       categories: [...theCategories].filter(el => el.checked).map(el => el.value),
-      email: theEmail[0].value,
+      email: theEmail.value,
       adults: theAdults.value,
       childrens: theChildrens.value
     };
