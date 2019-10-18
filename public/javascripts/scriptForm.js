@@ -1,19 +1,24 @@
 $(document).ready(function() {
-  const theName = document.getElementsByClassName("the-name");
+  const theName = document.getElementById("InputName1");
   const theCategories = document.getElementsByClassName("the-categories");
   const theEmail = document.getElementsByClassName("the-email");
+  const theAdults = document.getElementById("InputNumberAdults");
+  const theChildrens = document.getElementById("InputNumberChildrens");
+  InputNumberAdults;
   $("#new-client-form").submit(function(e) {
     e.preventDefault();
     var $this = $("#btn-submit");
-    var loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> loading...';
+    var loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> Cadastrando...';
     if ($(this).val() !== loadingText) {
       $this.data("original-text", $(this).val());
       $this.html(loadingText);
     }
     const clientInfo = {
-      name: theName[0].value,
+      name: theName.value,
       categories: [...theCategories].filter(el => el.checked).map(el => el.value),
-      email: theEmail[0].value
+      email: theEmail[0].value,
+      adults: theAdults.value,
+      childrens: theChildrens.value
     };
 
     // Make a POST request
@@ -28,8 +33,10 @@ $(document).ready(function() {
         } else {
           $("#successMsg").show();
           console.log("post successful and the response is: ", response.data);
-          theName[0].value = "";
+          theName.value = "";
           theEmail[0].value = "";
+          theChildrens.value = "";
+          theAdults.value = "";
           [...theCategories].forEach(el => {
             el.checked = false;
           });
