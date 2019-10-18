@@ -1,6 +1,10 @@
-<h1>{{title}}</h1>
-<section class = "pages">
-<h1>Cadastre seu e-mail e seus gostos</h1>
+
+<section class = "pages row">
+  <div class="main-pages col-md-5 col-sm-6">
+
+<h2 class ="header-main-section1">refeições saudáveis para toda a família</h2>
+<h2 class ="header-small-section1">que tal se cadastrar e receber um desconto na sua primeira compra?</h2>
+ 
 <div class="container">
   <form id="new-client-form">
     <div class="alert alert-success" role="alert" id="successMsg" style="display: none;">
@@ -13,34 +17,46 @@
       Opss algo de errado aconteceu! Tente novamente mais tarde! Ou entre em contato conosco.
     </div>
     <div class="form-group">
-      <label for="InputName">Name</label>
-      <input type="text" class="form-control the-name" id="InputName1" name="name" placeholder="Enter your Name" required>
+      
+      <input type="text" class="form-control imputs" id="InputName1" name="name" placeholder="Nome" required>
     </div>
     <div class="form-group">
-      <label for="InputEmail">Email address</label>
-      <input type="email" class="form-control the-email" id="InputEmail" name="email" aria-describedby="emailHelp" placeholder="Enter your email"
+ 
+      <input type="email" class="form-control imputs" id="InputEmail" name="email" aria-describedby="emailHelp" placeholder="Email"
         required>
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+     
     </div>
-    <div class="form-group">
-      <label for="categories">Você é: </label>
+     <div class="form-group">
+ 
+      <input type="number" class="form-control imputs" id="InputNumberAdults" name="adults" placeholder="Adultos" required>
+    </div>
+     <div class="form-group">
+     
+      <input type="number" class="form-control imputs" id="InputNumberChildrens" name="childrens" placeholder="Crianças" required>
+    </div>
+    <div class="form-group preferences">
+      <label for="categories">Preferencias </label>
+      <br>
       <div class="form-check form-check-inline">
         <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="carnivoro">
-        <label class="form-check-label" for="inlineCheckbox1">Carnívoro</label>
+        <label class="form-check-label" for="inlineCheckbox1">Vegetariano</label>
       </div>
       <div class="form-check form-check-inline">
         <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="vegetariano">
-        <label class="form-check-label" for="inlineCheckbox2">Vegetariano</label>
+        <label class="form-check-label" for="inlineCheckbox2">Vegano</label>
       </div>
       <div class="form-check form-check-inline">
         <input class="form-check-input the-categories" type="checkbox" id="inlineCheckbox" name="categories" value="vegano">
-        <label class="form-check-label" for="inlineCheckbox3">Vegano</label>
+        <label class="form-check-label" for="inlineCheckbox3">Low-Carb</label>
       </div>
 
     </div>
-    <button id="btn-submit" type="submit" class="btn btn-primary">Cadastrar</button>
+    <button id="btn-submit" type="submit" class="form-button btn btn-primary btn-lg btn-block">Receber 20%</button>
+
   </form>
 </div>
+</div>
+
 </section>
 <section class="carrosel"> 
 <div class="container-fluid">
