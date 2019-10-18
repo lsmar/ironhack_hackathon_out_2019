@@ -1,6 +1,7 @@
 const express = require("express");
 const passportRouter = express.Router();
 const Admin = require("../models/admin");
+const Client = require("../models/client");
 
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
@@ -20,16 +21,20 @@ passportRouter.post("/login", passport.authenticate("local", {
 }));
 
 passportRouter.get("/admin", ensureLogin.ensureLoggedIn(), (req, res) => {
+  Admin.find()
+  .then(clients => {
  
+    res.render("admin", { user: req.user,clients})
+})
+
+  .catch(err => console.log(err))
+  
    
-  res.render("admin", { user: req.user})
+
 });
 
  
 
-passportRouter.get("/logout", (req, res) => {
-  req.logout();
-  res.redirect("/");
-});
+
 
 module.exports = passportRouter;
