@@ -34,15 +34,70 @@
   <div class="row image-green">
     <div class="col-sm-12 text-center mt-3"><h3>KITS</h3>
       <h1>Combos</h1></div>
-    <div class="col-md-4 col-sm-12 text-center p-2"><img class="img-fluid p-2" src="/images/combo1.png" alt=""><br><button class="btn mt-3 btn-primary
+    <div class="col-md-4 col-sm-12 text-center p-2">
+      <div class="container-lsm m-5">
+        <img class="img-fluid p-2 image-lsm" src="/images/combo1.png" alt="">
+        <div class="middle-lsm">
+          <div class="text-lsm"><h1>MEU COMBO</h1><h2>Marmitas individuais para 5 dias.</h2></div>
+        </div>
+      </div>
+      <br><button class="btn mt-3 btn-primary
         form-button pl-5 pr-5 mb-5">Comprar</button></div>
-    <div class="col-md-4 col-sm-12 text-center p-2"><img class="img-fluid p-2" src="/images/combo2.png" alt=""><br><button class="btn mt-3 btn-primary
+    <div class="col-md-4 col-sm-12 text-center p-2">
+      <div class="container-lsm m-5">
+        <img class="img-fluid p-2 image-lsm" src="/images/combo2.png" alt="">
+        <div class="middle-lsm">
+          <div class="text-lsm"><h1>NOSSO COMBO</h1><h2>Marmitas para até 4 pessoas</h2></div>
+        </div>
+      </div>
+      <br><button class="btn mt-3 btn-primary
         form-button pl-5 pr-5 mb-5">Comprar</button></div>
-    <div class="col-md-4 col-sm-12 text-center p-2"><img class="img-fluid p-2" src="/images/combo3.png" alt=""><br><button class="btn mt-3 btn-primary
+    <div class="col-md-4 col-sm-12 text-center p-2">
+      <div class="container-lsm m-5">
+        <img class="img-fluid p-2 image-lsm" src="/images/combo3.png" alt="">
+        <div class="middle-lsm">
+          <div class="text-lsm"><h1>COMBO DELES</h1><h2>Marmitas para 5 dias no tamanho kids</h2></div>
+        </div>
+      </div>
+      <br><button class="btn mt-3 btn-primary
         form-button pl-5 pr-5 mb-5">Comprar</button></div>
   </div>
 </div>
 <style>
+  .image-lsm {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-lsm {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-lsm:hover .image-lsm {
+  opacity: 0.3;
+}
+
+.container-lsm:hover .middle-lsm {
+  opacity: 1;
+}
+
+.text-lsm {
+
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
   .image-green{
   min-height: 600px;
   width: 100vw;
