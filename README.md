@@ -14,6 +14,18 @@
 
 ## Bonus
 - Deploy AWS e Atlas (Feito, inclusive observa modificações no github e faz o deploy automaticamente no aws e no heroku)
-- Microinterações (Botão de envio com loading e maps com hover nos pins e info box on click)
+- Microinterações (Botão de envio com loading, imagens de combos e maps com hover nos pins e info box on click)
 - Maps (Feito com interações)
+
+## Links
+
+Heroku
+[Home Heroku](https://nhackfoods.herokuapp.com/)
+[Login Heroku](https://nhackfoods.herokuapp.com/login) User: arnold1@gmail.com Senha: 123
+[Admin Heroku](https://nhackfoods.herokuapp.com/admin)
+
+AWS
+[Home Heroku](http://ironthong2-env.kncdijsxaj.us-east-2.elasticbeanstalk.com/)
+[Login Heroku](http://ironthong2-env.kncdijsxaj.us-east-2.elasticbeanstalk.com/login) User: arnold1@gmail.com Senha: 123
+[Admin Heroku](http://ironthong2-env.kncdijsxaj.us-east-2.elasticbeanstalk.com/admin)
 
