@@ -1,4 +1,6 @@
-* {
+
+
+body {
   padding:0;
   margin:0;
   vertical-align:baseline;
@@ -7,14 +9,9 @@
   font-size: 10px;
   }
 
-body {
-  padding: 0px;
-  margin: 0px;
-  background: #E5E5E5;
-  color: #ddd;
-}
+
 .logo{
-  width: 5rem;
+  width: 7rem;
   padding-bottom:3rem;
   margin-right: 2rem;
 }
@@ -62,7 +59,8 @@ a {
 }
 .main-pages{
   padding: 2%;
-  padding-top: 10%;
+  padding-top: 7%;
+  
 
 }
 .imputs{
@@ -73,7 +71,7 @@ a {
   font-family: Raleway;
 font-style: normal;
 font-weight: normal;
-font-size: 1rem;
+font-size: 1rem ;
 line-height: 1rem ; 
 
 /* Gray 3 */
@@ -222,3 +220,4 @@ letter-spacing: 0.195em;
 
 padding-bottom: 2rem;
 }
+
